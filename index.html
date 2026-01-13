@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #ffeaff;
+      color: #4a3f66;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .dark {
+      background: #2b2440;
+      color: #f3e8ff;
+    }
+
+    .header {
+      max-width: 700px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 50px;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+      position: relative;
+    }
+
+    .dark .header {
+      background: #3a3154;
+    }
+
+    /* Cute sparkle accents */
+    .header::before,
+    .header::after {
+      content: "✦";
+      position: absolute;
+      font-size: 28px;
+      color: #d7b8ff;
+      opacity: 0.7;
+    }
+
+    .header::before {
+      top: -15px;
+      left: -10px;
+    }
+
+    .header::after {
+      bottom: -15px;
+      right: -10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      color: #5a4b81;
+    }
+
+    .dark h1 {
+      color: #e9d8ff;
+    }
+
+    p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #6b5a8e;
+    }
+
+    .dark p {
+      color: #d9caff;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 14px;
+      background: #d7b8ff;
+      color: #726a85;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #8068a7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Elina ✦</h1>
+    <p>Web Developer • UI</p>
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
+</body>
+</html>
+
+  
